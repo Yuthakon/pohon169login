@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: 
+Sitemap: https://pohon169login.pages.dev/sitemap.xml
