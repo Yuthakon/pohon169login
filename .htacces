@@ -1,0 +1,9 @@
+RewriteEngine On
+
+# Redirect semua HTTP ke HTTPS
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Redirect semua domain ke https://www.pohon169.id
+RewriteCond %{HTTP_HOST} !^www\.pohon169\.id$ [NC]
+RewriteRule ^ https://www.pohon169.id%{REQUEST_URI} [L,R=301]
